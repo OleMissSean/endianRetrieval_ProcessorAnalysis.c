@@ -13,13 +13,12 @@ bool is_little_endian()
 {
 	// put your code here
 
+	int bigendian() 
+	{
 	    int i = 1;
-	    //0char *low = (char*) &i;
-     char *low0 = (char*)&i;
-	     if((char*)
-        {
-            return true;
-         }
+	    char *low = (char*) &i;
+	
+	    return *low ? 0 : 1;
 	}
 
 	unsigned int merge_bytes( unsigned int x, unsigned int y )
